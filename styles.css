@@ -1,0 +1,320 @@
+/* Reset some browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20232a;
+    padding: 1rem 2rem;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+  font-family:'Courier New', Courier, monospace ;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #fff;
+}
+
+.header h1 {
+  font-family:'Courier New', Courier, monospace ;
+    font-size: 2rem;
+    color: #333;
+}
+
+.header p {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.product-card {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-weight: 500;
+    color: #333;
+}
+ .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 24px;
+      margin-right: 10px;
+    }
+ /* Hero Section with background image */
+   .hero {
+  position: relative;
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-image 1s linear;
+}
+
+    .hero-text {
+      position: absolute;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      z-index: 1;
+      /* max-width: 40%; */
+    }
+
+    .hero-text .btn {
+      margin-top: 20px;
+      background-color: red;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    /* Section Title */
+    .section-title {
+      padding: 30px 40px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #1e1e1e;
+    }
+    .slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.slide-btn.left {
+  left: 20px;
+}
+
+.slide-btn.right {
+  right: 20px;
+}
+
+.slide-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* Modal Base */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 8% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+}
+
+#modalSpecs {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+#modalSpecs li {
+  margin-bottom: 0.5rem;
+}
+/* Modal background and centering */
+#buy-now-modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+#buy-now-modal > div {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e60000; /* accent color */
+}
+
+/* Modal heading */
+#buy-now-modal h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Form input styles */
+#buy-now-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+#buy-now-form input,
+#buy-now-form textarea,
+#buy-now-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+/* Submit button */
+#buy-now-form button[type="submit"] {
+  width: 100%;
+  background: #e60000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#buy-now-form button[type="submit"]:hover {
+  background: #c70000;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoSpeca</title>
+    <link rel="icon" type="image/x-icon" href="/assets/final vector favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+        <a class="logo">
+      <img src="/MotoSpeca/assets/final vector favicon.png" alt="Logo"> MOTOSPECA
+    </a>
+    
+    </div>
+        <!-- <div class="logo" >MotoSpec</div> -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="eshop.html">E-Shop</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page Content -->
+
+     <<header class="header">
+  <h1>MOTOSPECA</h1>
+  <p>❤️❤️Know before you go❤️❤️ </p><br>
+  
+  <img src="/MotoSpeca/assets/bike.jpg" alt="Bike Image" class="header-bike-image" />
+  
+  <!-- Search Bike Form -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search bike..." onkeyup="searchBikes()" />
+  <button onclick="searchBikes()">Search</button>
+  <button onclick="compareSelectedBikes()">Compare Now</button>
+</div>
+<div class="product-card" onclick="showModal(0)">
+  <img src="/MotoSpeca/assets/ns-200-removebg-preview.png" alt="Bike 1">
+  
+  <p>Bajaj Pulsar NS200</p>
+  <input type="checkbox" class="compare-check" value="Bajaj Pulsar NS200" onclick="event.stopPropagation()">
+  <div class="product-card" onclick="showModal(0)">
+  <!-- <img src="/MotoSpeca/assets/HORNET.png" alt="Bike 1">
+ </div> <div> -->
+  <!-- <p>Honda hornet200</p>
+  <input type="checkbox" class="compare-check" value="Honda Hornet 200" onclick="event.stopPropagation()">
+</div> -->
+
+
+
+
+<!-- Popular Models Section -->
+  <div class="section-title">LATEST MODELS
+
+   <!-- /* Product Detail Modal*/ -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+  </div>
+</div>
+
+<section class="product-grid">
+  <div class="product-card" onclick="showModal(0)">
+    <img src="/MotoSpeca/assets/ns-200-removebg-preview.png" alt="Bike 1">
+    <p>Bajaj Pulsar NS200</p>
+  </div>
+
+  <div class="product-card" onclick="showModal(1)">
+    <img src="/MotoSpeca/assets/R15M-0-300x214.png" alt="Bike 2">
+    <p>Yamaha R15 V4</p>
+  </div>
+
+  <div class="product-card" onclick="showModal(2)">
+    <img src="/MotoSpeca/assets/APACHE 160 (2).png" alt="Bike 3">
+    <p>TVS Apache RTR 160</p>
+  </div>
+   <div class="product-card" onclick="showModal(3)">
+    <img src="/MotoSpeca/assets/DUKE 200.webp" alt="Bike 4">
+            <p>KTM Duke 200</p>
+  </div>
+   <div class="product-card" onclick="showModal(4)">
+    <img src="/MotoSpeca/assets/Yamaha-mt-15-nepal-rbg.png" alt="Bike 5">
+            <p>Yamaha-mt-15</p>
+  </div>
+   <!-- <div class="product-card" onclick="showModal(5)">
+    <img src="/assets/APACHE 160.png" alt="Bike 6">
+    <p>TVS Apache RTR 160</p>
+  </div>
+   <div class="product-card" onclick="showModal(6)">
+    <img src="/assets/APACHE 160.png" alt="Bike 7">
+    <p>TVS Apache RTR 160</p>
+  </div>
+   <div class="product-card" onclick="showModal(7)">
+    <img src="/assets/APACHE 160.png" alt="Bike 8">
+    <p>TVS Apache RTR 160</p>
+  </div> -->
+
+  <!-- Add more cards... -->
+</section>
+ <script src="viewBikes_script.js"></script> 
+</body>
+</html>

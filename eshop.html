@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotoSpeca</title>
+  <link rel="icon" type="image/x-icon" href="/assets/final vector favicon.png" />
+  <link rel="stylesheet" href="eshop.css" />
+</head>
+<body>
+  <header style="padding: 20px; text-align: right; font-size: 18px;">
+    🛒 Cart: <span id="cart-count">0</span> item(s)
+  </header>
+
+  <section id="eshop">
+    <div class="eshop-container">
+      <h2>Explore Our E-Shop</h2>
+      <p>Browse the latest bikes, gear, and accessories curated just for you.</p>
+
+      <div class="main-content">
+        <div class="product-grid">
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/helmet.jpg" alt="Helmet" />
+            <h3>Racing Helmet</h3>
+            <p>Npr 4999</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/gloves.jpg" alt="Gloves" />
+            <h3>Rider Gloves</h3>
+            <p>Npr 1499</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/jacket2.jpg" alt="Jacket" />
+            <h3>Riding Jacket</h3>
+            <p>Npr, 7999</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/engileoil.jpg" alt="Engine Oil" />
+            <h3>Engine Oil</h3>
+            <p>Npr, 899</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/googles.jpg" alt="Goggles" />
+            <h3>Riding Goggles</h3>
+            <p>Npr, 799</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/boots.jpg" alt="Boots" />
+            <h3>Riding Boots</h3>
+            <p>Npr, 5499</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/tank bag.jpg" alt="Tank Bag" />
+            <h3>Tank Bag</h3>
+            <p>Npr, 2299</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/chain oil.jpg" alt="Chain Lubricant" />
+            <h3>Chain Lubricant</h3>
+            <p>Npr, 499</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/knneeguard.jpg" alt="Crash Guard" />
+            <h3>Crash Guard</h3>
+            <p>Npr, 3299</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/ledlight.jpg" alt="Headlight" />
+            <h3>LED Light</h3>
+            <p>Npr, 1799</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/mount.jpg" alt="Phone Mount" />
+            <h3>Phone Mount</h3>
+            <p>Npr, 899</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/win.jpg" alt="Windshield" />
+            <h3>Windshield</h3>
+            <p>Npr, 4299</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/headlight.jpg" alt="External LED Headlight" />
+            <h3>External LED Headlight</h3>
+            <p>Npr, 599</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/stand.jpg" alt="Rear Paddock Stand" />
+            <h3>Rear Paddock Stand</h3>
+            <p>Npr, 199</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/MotoSpeca/assets/bikecover.webp" alt="Bike Cover" />
+            <h3>Bike Cover</h3>
+            <p>Npr, 1199</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+
+        </div>
+
+        <aside class="cart-panel">
+          <h3>Your Cart</h3>
+          <ul id="cart-items">
+            <li>No items in cart.</li>
+          </ul>
+          <p id="cart-total">Total: ₹0</p>
+          <button id="buy-now" disabled>Buy Now</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy Now Modal -->
+  <div id="buy-now-modal" class="modal">
+    <div class="modal-content">
+      <button id="closeModalBtn" class="close-btn" type="button">&times;</button>
+      <h2>Complete Your Purchase</h2>
+      <form id="buy-now-form">
+        <label for="product-name">Product(s):</label>
+        <input type="text" id="product-name" name="product" readonly />
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="">Select</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="EMI">EMI</option>
+          <option value="Cash on Delivery">Cash on Delivery</option>
+        </select>
+
+        <button type="submit">Confirm Purchase</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="eshop.js"></script>
+</body>
+</html>

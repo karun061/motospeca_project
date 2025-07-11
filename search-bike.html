@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search & Compare Bikes</title>
+  <link rel="stylesheet" href="searchstyles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Search & Compare Bikes</h1>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search bike..." onkeyup="searchBikes()">
+      <button onclick="searchBikes()">Search</button>
+      <button class="compare-btn" onclick="compareSelectedBikes()">Compare Now</button>
+    </div>
+
+    <div id="bikeList" class="bike-list"></div>
+
+    <div id="compareContainer" class="compare-container"></div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>
